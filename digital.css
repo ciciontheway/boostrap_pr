@@ -1,0 +1,71 @@
+/* 統一的 */
+.wd-half {
+  width: 50%;
+}
+.wd-full{
+  width: 100%;
+}
+.b-round{
+  border-radius: 15px;
+}
+
+
+.icon{
+  /* width: 50px;
+  height: 50px; */
+
+  background-color: lightblue;
+}
+
+.sm-outline{
+  padding: 50px 341px;
+}
+
+/* nav */
+
+.navbar{
+  height: 92px;
+  padding: 0px 327px;
+}
+
+
+
+/* main  */
+.swiper-wrapper{
+  height: calc(100vh - 92px);
+}
+
+main section .container{
+  padding-left: 167.5px;
+  padding-right: 167.5px;
+}
+
+
+main section .line{
+  width: 80px;
+  height: 5px;
+  border-radius: 12px
+}
+
+/* Section2 */
+
+/* 底下三個東西的向內縮 */
+main section .door_icon{
+  padding: 0px 159px ;
+}
+ /* 按鈕  */
+main section .row button {
+  padding: 10px 40px;
+  font-size: 18px;
+}
+
+
+/* Section3 */
+main section .container-fluid .outline{
+  padding: 50px 150px;
+}
+
+/* Section9 card */
+main section .container-lg .row .card {
+  border: unset;
+}
