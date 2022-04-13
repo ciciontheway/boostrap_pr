@@ -1,31 +1,60 @@
 /* 統一的 */
-.wd-half {
-  width: 50%;
-}
-.wd-full{
-  width: 100%;
-}
+
 .b-round{
   border-radius: 15px;
+}
+.b-2 {
+  border-radius: 4px;
 }
 
 
 .icon{
-  /* width: 50px;
-  height: 50px; */
-
   background-color: lightblue;
 }
 
-.sm-outline{
-  padding: 50px 341px;
+.xs-outline{
+  padding: 50px 200px;
 }
 
-/* nav */
 
-.navbar{
-  height: 92px;
-  padding: 0px 327px;
+ul {
+  list-style: none;
+}
+
+
+.py-24{
+  padding-top: 72px;
+  padding-bottom: 72px;
+}
+
+/* .text-body{
+  font-size: 15px;
+
+  font-family: 'Titillium Web', sans-serif;
+} */
+
+
+/* Card 字體 */
+
+/* Title */
+.card-title{
+  font-size: 18px;
+}
+
+/* line 字體 */
+/* 目前用於：S2,S6 */
+.leader-text{
+  font-size: 30px;
+  font-weight: 400;
+}
+
+
+/* nav */
+@media(max-width:981px){
+  .nav-btn {
+    justify-content: center;
+  }
+
 }
 
 
@@ -35,9 +64,11 @@
   height: calc(100vh - 92px);
 }
 
-main section .container{
-  padding-left: 167.5px;
-  padding-right: 167.5px;
+@media (max-width: 767px){
+  .swiper {
+    width: 100%;
+    height: 70vw;
+}
 }
 
 
@@ -50,22 +81,107 @@ main section .line{
 /* Section2 */
 
 /* 底下三個東西的向內縮 */
-main section .door_icon{
-  padding: 0px 159px ;
+
+
+
+
+
+/* Section5 cards */
+@media(max-width:1280px){
+  .line_card{
+    width: 25%;
+  }
 }
- /* 按鈕  */
-main section .row button {
-  padding: 10px 40px;
-  font-size: 18px;
+
+@media(max-width:768px){
+  .line_card{
+    width: 50%;
+  }
 }
 
 
-/* Section3 */
-main section .container-fluid .outline{
-  padding: 50px 150px;
+
+
+
+/* Section6 */
+.fa-circle{
+  width: 130px;
+  height: 130px;
+  background-color:rgb(217, 217, 245);
 }
+
+@media(max-width:992px){
+  .fa-circle{
+    height: 80px;
+    width: 80px;
+  }
+}
+
+
+
+/* Section 7 */
+/* 圖片 */
+
+@media(max-width:996px){
+  .shop-pic{
+    width: 100%;
+    height: 200px;
+  }
+}
+
+/* line 裡面的header */
+.line_text{
+  font-size: 25px;
+}
+
+.color-btn{
+  width: 25px;
+  height: 25px;
+  border: 1px solid gray;
+}
+
+
+/* Section 8 */
+/* card 裡面的字體 */
+
+.card-text-top{
+  font-size: 15px;
+  line-height: 8px;
+  color: rgba(128, 128, 128, 0.884);
+
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.card-text{
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 15px;
+  color: rgba(0, 0, 0, 0.918);
+
+  font-family: 'Quicksand', sans-serif;
+}
+
 
 /* Section9 card */
 main section .container-lg .row .card {
   border: unset;
 }
+
+/* Section 地圖 */
+/* position */
+
+.map{
+  position: relative;
+}
+
+.map-form{
+  background-color: white;
+  border-radius: 10px;
+  
+  padding: 30px;
+
+  position: absolute;
+  right: 5%;
+  top: 100px;
+}
+

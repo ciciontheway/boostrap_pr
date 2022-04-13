@@ -15,6 +15,12 @@
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./digital.css">
 
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap" rel="stylesheet">
+
   <style>
 
   </style>
@@ -23,45 +29,34 @@
 
 <body>
   <!-- nav -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class=" container navbar navbar-expand-lg navbar-light">
 
     <!-- Logo -->
-    <a class="navbar-brand" href="https://lesson-bootstrap.dev-hub.io/">
-      <img src="./digital box img/資產 1.svg" alt="">
+    <a class="navbar-brand" href="#">
+      <img src="./digital box img/資產 1.svg" class="w-75 h-75 p-2" alt="">
     </a>
 
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
-      aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <!-- 漢堡條 -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
     <!-- 右側btn -->
-    <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarText">
-      <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Blog <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Portfolio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
-        </li>
-        <!-- 購物車車 -->
-        <li class="nav-item">
-          <a class="nav-link" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-        </li>
-        <!-- 登入按鍵 -->
-        <li class="nav-item">
-          <a class="nav-link" href="#"><i class="fa-solid fa-circle-user"></i></a>
-        </li>
-      </ul>
+    <div class="collapse navbar-collapse justify-content-end text-center" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link active" href="#">Blog <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="#">Portfolio</a>
+        <a class="nav-link" href="#">About</a>
+        <a class="nav-link disabled">Contact</a>
+        <div class="d-flex justify-content-center align-items-center">
+          <a class="nav-link px-sm-2" href="#"><i class="fa-solid fa-cart-shopping" style="font-size: 25px;"></i></a>
+          <a class="nav-link px-sm-2" href="#"><i class="fa-solid fa-circle-user" style="font-size: 30px;"></i></a>
+          </li>
+        </div>
+
+      </div>
     </div>
-
-
   </nav>
 
   <!-- Main Section -->
@@ -83,12 +78,12 @@
     <!-- Section2 -->
     <section>
 
-      <div class="container-fluid mx-auto px-5 py-24 mt-5">
+      <div class="container mx-auto px-5 py-24 my-5">
 
         <!-- 最上排的字 -->
-        <div class="p-4 d-flex flex-column align-content-center">
-          <h2 class="text-center mb-4">Raw Denim Heirloom Man Braid </h2>
-          <p class="text-base text-center">Blue bottle crucifix vinyl
+        <div class="container p-4 d-flex flex-column align-content-center">
+          <h2 class="text-center mb-4 leader-text">Raw Denim Heirloom Man Braid </h2>
+          <p class=" text-base text-center">Blue bottle crucifix vinyl
             post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi
             pug.</p>
           <div class="flex mt-6 mb-5 d-flex justify-content-center">
@@ -98,8 +93,9 @@
         </div>
 
         <!-- 下面三塊東西 -->
-        <div class="row door_icon">
-          <div class="col-sm d-flex flex-column text-center align-items-center">
+        <div class="d-flex flex-reverse flex-wrap">
+          <!-- 第一塊 -->
+          <div class="col-xl-4 col-sm-12 py-4 d-flex flex-column text-center align-items-center">
             <div class="icon rounded-circle p-3 mb-3">
               <img src="./digital box img/svgexport-2.svg" alt="">
             </div>
@@ -110,8 +106,8 @@
               <a class="mt-3 inline-flex items-center">Learn More →</a>
             </div>
           </div>
-
-          <div class="col-sm d-flex flex-column text-center align-items-center">
+          <!-- 第二塊 -->
+          <div class="col-xl-4 col-sm-12 py-4 d-flex flex-column text-center align-items-center">
             <div class="icon rounded-circle p-3 mb-3">
               <img src="./digital box img/svgexport-4.svg" class="w-100" alt="">
             </div>
@@ -122,8 +118,8 @@
               <a class="mt-3 inline-flex items-center">Learn More →</a>
             </div>
           </div>
-
-          <div class="col-sm d-flex flex-column text-center align-items-center">
+          <!-- 第三塊 -->
+          <div class="col-xl-4 col-sm-12 py-4 d-flex flex-column text-center align-items-center">
             <div class="icon rounded-circle p-3 mb-3">
               <img src="./digital box img/svgexport-5.svg" alt="">
             </div>
@@ -137,24 +133,25 @@
         </div>
 
         <!-- 最後的按鈕 -->
-        <div class="row d-flex justify-content-center mt-5">
+        <div class="d-flex justify-content-center my-5 px-3">
           <button type="button" class="btn btn-primary">Button</button>
         </div>
 
       </div>
     </section>
 
+
     <!-- Section3  -->
     <section>
 
-      <div class="container-fluid mx-auto px-5 py-24 mt-5">
+      <div class="container mx-auto px-5 mt-3">
 
         <!-- 上面那塊字 -->
-        <div class="row outline d-flex justify-content-around">
-          <div class="col-4">
-            <h2>Master Cleanse Reliac Heirloom</h2>
+        <div class="row outline d-flex justify-content-between my-5">
+          <div class="col-xl-4">
+            <p class="leader-text">Master Cleanse Reliac Heirloom</p>
           </div>
-          <div class="col-7">
+          <div class="col-xl-7">
             <p>Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table.
               Franzen you probably haven't heard of them man bun deep jianbing selfies heirloom.</p>
           </div>
@@ -221,14 +218,15 @@
       </div>
     </section>
 
+
     <!-- Section4：Price + table -->
     <section>
 
-      <div class="container-fluid mx-auto px-5 py-24 mt-5">
+      <div class="container mx-auto px-5 py-24 mt-5">
 
         <!-- Price 那行字 -->
-        <div class="pricing-header text-center sm-outline">
-          <h1 class="display-4">Pricing</h1>
+        <div class="pricing-header text-center">
+          <h2 class="display-4">Pricing</h2>
           <p class="lead p-2">Banh mi cornhole echo park skateboard authentic crucifix neutra tilde lyft biodiesel
             artisan
             direct trade mumblecore 3 wolf moon twee</p>
@@ -293,8 +291,8 @@
             </tbody>
           </table>
           <!-- Table 下面那行東西 -->
-          <div class="row d-flex justify-content-between p-3">
-            <a class="inline-flex items-center">Learn More →</a>
+          <div class="row d-flex justify-content-between align-items-center p-3">
+            <a class="">Learn More →</a>
             <button type="button" class="btn btn-primary">Buttom</button>
           </div>
         </div>
@@ -305,159 +303,213 @@
 
     </section>
 
-    <!-- Section5  -->
+    <!-- Section5 四塊card -->
     <section>
-      <div class="container-fluid mx-auto px-5 py-24 mt-5">
+      <div class="container py-24">
 
         <!-- 上面那排字 -->
-        <div class="row outline d-flex justify-content-around">
-          <div class="col-4">
-            <h2>Pitchfork Kickstarter Taxidermy</h2>
+        <div class="row outline d-flex justify-content-around my-4">
+          <div class="col-xl-4">
+            <p class="leader-text">Pitchfork Kickstarter Taxidermy</p>
           </div>
-          <div class="col-7">
-            <p>Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table.
+          <div class="col-xl-7">
+            <p> Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke
+              farm-to-table.
               Franzen you probably haven't heard of them man bun deep jianbing selfies heirloom.</p>
           </div>
         </div>
 
-        <!-- 下面那四塊 -->
-        <div class="card-deck outline">
+        <!-- 下面那四塊卡片 -->
 
-          <div class="card p-4 b-round">
-            <img src="./digital box img/720x400.png" class="w-100 b-round" alt="...">
-            <div class="card-body">
-              <p class="card-text">SUBTITLE</p>
-              <h5 class="card-title">Chichen Itza</h5>
-              <p class="card-text">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt
-                edison bulbche.</p>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
+          <div class="col mb-4">
+            <div class="card p-3">
+              <img src="./digital box img/720x400.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p style="font-size: 10px; line-height: 10px; color: blue;">SUBTITLE</p>
+                <h5 class="card-title">Chichen Itza</h5>
+                <p>Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt
+                  edison bulbche.</p>
+              </div>
             </div>
           </div>
-
-          <div class="card p-4 b-round">
-            <img src="./digital box img/720x400.png" class="w-100 b-round" alt="...">
-            <div class="card-body">
-              <p class="card-text">SUBTITLE</p>
-              <h5 class="card-title">Chichen Itza</h5>
-              <p class="card-text">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt
-                edison bulbche.</p>
+          <div class="col mb-4">
+            <div class="card p-3">
+              <img src="./digital box img/721x401.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p style="font-size: 10px; line-height: 10px; color: blue;">SUBTITLE</p>
+                <h5 class="card-title">Colosseum Roma</h5>
+                <p>Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt
+                  edison bulbche.</p>
+              </div>
             </div>
           </div>
-          <div class="card p-4 b-round">
-            <img src="./digital box img/720x400.png" class="w-100 b-round" alt="...">
-            <div class="card-body">
-              <p class="card-text">SUBTITLE</p>
-              <h5 class="card-title">Chichen Itza</h5>
-              <p class="card-text">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt
-                edison bulbche.</p>
+          <div class="col mb-4">
+            <div class="card p-3">
+              <img src="./digital box img/722x402.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p style="font-size: 10px; line-height: 10px; color: blue;">SUBTITLE</p>
+                <h5 class="card-title">Great Pyramid of Giza</h5>
+                <p>Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt
+                  edison bulbche.</p>
+              </div>
             </div>
           </div>
-          <div class="card p-4 b-round">
-            <img src="./digital box img/720x400.png" class="w-100 b-round" alt="...">
-            <div class="card-body">
-              <p class="card-text">SUBTITLE</p>
-              <h5 class="card-title">Chichen Itza</h5>
-              <p class="card-text">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt
-                edison bulbche.</p>
+          <div class="col mb-4">
+            <div class="card p-3">
+              <img src="./digital box img/723x403.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p style="font-size: 10px; line-height: 10px; color: blue;">SUBTITLE</p>
+                <h5 class="card-title">San Francisco</h5>
+                <p>Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt
+                  edison bulbche.</p>
+              </div>
             </div>
           </div>
         </div>
 
+      </div>
 
+    </section>
+
+    <!-- Section6 3line RWD-->
+    <section>
+
+      <div class="container my-5 py-24">
+
+        <!-- 第一塊 -->
+        <div class="row my-4 py-3">
+          <div class="col-md-3 col-sm-12">
+            <div class="d-flex justify-content-center justify-content-md-start">
+              <img src="./digital box img/svgexport-2.svg" class="fa-circle rounded-circle p-4" alt="">
+            </div>
+          </div>
+
+          <div
+            class="col-md-9 col-sm-12 d-flex flex-column justify-content-center align-items-center align-items-lg-start my-sm-4">
+            <p class="leader-text">Shooting Stars</p>
+            <span class="text-center">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy.
+              Gastropub indxgo juice
+              poutine.</span>
+            <a class="">
+              <p>Learn More →</p>
+            </a>
+          </div>
+        </div>
+        <hr class="featurette-divider">
+
+        <!-- 第二塊 -->
+        <div class="row my-4 py-3 d-flex flex-sm-row-reverse">
+          <div class="col-md-3 col-sm-12">
+            <div class="d-flex justify-content-center justify-content-md-start">
+              <img src="./digital box img/svgexport-4.svg" class="fa-circle rounded-circle p-4" alt="">
+            </div>
+          </div>
+          <div
+            class="col-md-9 col-sm-12 d-flex flex-column justify-content-center align-items-center align-items-lg-start my-sm-4">
+            <p class="leader-text">The Catalyzer</p>
+            <span class="text-center">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy.
+              Gastropub indxgo juice
+              poutine.</span>
+            <a class="">
+              <p>Learn More →</p>
+            </a>
+          </div>
+        </div>
+        <hr class="featurette-divider">
+
+        <!-- 第三塊 -->
+        <div class="row my-4 py-3">
+          <div class="col-md-3">
+            <div class="d-flex justify-content-center justify-content-md-start">
+              <img src="./digital box img/svgexport-5.svg" class="fa-circle rounded-circle p-4" alt="">
+            </div>
+          </div>
+          <div
+            class="col-md-9 d-flex flex-column justify-content-center align-items-center align-items-lg-start my-sm-4">
+            <p class="leader-text">The 400 Blows</p>
+            <span class="text-center">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy.
+              Gastropub indxgo juice
+              poutine.</span>
+            <a class="">
+              <p>Learn More →</p>
+            </a>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center">
+          <button type="button" class="btn btn-primary">Buttom</button>
+        </div>
 
       </div>
 
 
 
-    </section>
-
-    <!-- Section7 3line -->
-    <section>
-      <div class="container-lg pt-5">
-        <div class="row d-flex justify-content-around">
-          <div class="col-4">
-            <div class="icon rounded-circle">
-              <img src="./digital box img/svgexport-2.svg" alt="">
-            </div>
-          </div>
-          <div class="col-8">
-            <p>Shooting Stars</p>
-            <p>Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine.
-            </p>
-            <a class="mt-3 inline-flex items-center">Learn More →</a>
-          </div>
-        </div>
-        <hr class="featurette-divider">
-        <div class="row d-flex justify-content-around">
-          <div class="col-8">
-            <p>Shooting Stars</p>
-            <p>Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine.
-            </p>
-            <a class="mt-3 inline-flex items-center">Learn More →</a>
-          </div>
-          <div class="col-4">
-            <div class="icon rounded-circle">
-              <img src="./digital box img/svgexport-4.svg" alt="">
-            </div>
-          </div>
-        </div>
-        <hr class="featurette-divider">
-        <div class="row d-flex justify-content-around">
-          <div class="col-4">
-            <div class="icon rounded-circle">
-              <img src="./digital box img/svgexport-5.svg" alt="">
-            </div>
-          </div>
-          <div class="col-8">
-            <p>Shooting Stars</p>
-            <p>Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine.
-            </p>
-            <a class="mt-3 inline-flex items-center">Learn More →</a>
-          </div>
-        </div>
-        <button type="button" class="btn btn-primary">Buttom</button>
-      </div>
 
     </section>
 
-    <!-- Section8  -->
+    <!-- Section7 視窗 -->
     <section>
-      <div class="container-lg mt-3">
+
+      <div class="container mt-5 mb-5">
+
         <div class="row">
-          <div class="col-6 b-round">
-            <img src="./digital box img/400x400.png" class="w-100 b-round" alt="">
+
+          <!-- 左邊圖片 -->
+          <div class="col-sm-12 col-lg-6">
+            <img src="./digital box img/400x400.png" class="w-100" alt="">
           </div>
 
-          <div class="col-6">
+          <!-- 右側大塊 -->
+          <div class="col-sm-12 col-lg-6 my-sm-5">
             <p>BRAND NAME</p>
             <h2>The Catcher in the Rye</h2>
-            <div class="row">
-              <div class="col">
-                <img src="./digital box img/svgexport-11.svg" alt="">
-                <img src="./digital box img/svgexport-11.svg" alt="">
-                <img src="./digital box img/svgexport-11.svg" alt="">
-                <img src="./digital box img/svgexport-11.svg" alt="">
-                <img src="./digital box img/svgexport-12.svg" alt="">
+
+            <!-- 中間那三塊東西 -->
+            <div class="row mt-2 py-2">
+              <!-- 星星 -->
+              <div class="col-3" style="padding-right: unset;">
+                <img src="./digital box img/svgexport-11.svg" style="width: 20px;" alt="">
+                <img src="./digital box img/svgexport-11.svg" style="width: 20px;" alt="">
+                <img src="./digital box img/svgexport-11.svg" style="width: 20px;" alt="">
+                <img src="./digital box img/svgexport-11.svg" style="width: 20px;" alt="">
+                <img src="./digital box img/svgexport-12.svg" style="width: 20px;" alt="">
               </div>
-              <div class="col">4 Reviews</div>
-              <div class="col">
+
+              <div class="col-2 border-right border-dark" style="padding-right: unset;">4 Reviews</div>
+
+              <!-- social media -->
+              <div class="col-3">
                 <img src="./digital box img/svgexport-13.svg" alt="">
                 <img src="./digital box img/svgexport-14.svg" alt="">
                 <img src="./digital box img/svgexport-15.svg" alt="">
               </div>
             </div>
-            <p>
+            <!-- 大字塊 -->
+            <p class="py-4">
               Fam locavore kickstarter distillery. Mixtape chillwave tumeric sriracha taximy chia microdosing tilde DIY.
               XOXO fam indxgo juiceramps cornhole raw denim forage brooklyn. Everyday carry +1 seitan poutine tumeric.
               Gastropub blue bottle austin listicle pour-over, neutra jean shorts keytar banjo tattooed umami cardigan.
             </p>
+
+
             <div class="row">
-              <div class="col">
+              <!-- 顏色按鈕 -->
+              <div class="col-4 d-flex justify-content-around">
                 <p>Color</p>
-                <!-- 放顏色選擇器 -->
+                <button type="button" class="color-btn btn rounded-circle"></button>
+                <button type="button" class="color-btn btn btn-secondary rounded-circle"></button>
+                <button type="button" class="color-btn btn btn-info rounded-circle"></button>
               </div>
-              <div class="col">
-                <p>Size</p>
-                <!-- 放下拉選單 -->
+
+              <!-- 下拉選單 -->
+              <div class="col-4 d-flex align-items-center justify-content-around">
+                <label for="size" style="margin-bottom: unset;">Size</label>
+                <select class="custom-select d-block w-50" id="size" required>
+                  <option value="">SM</option>
+                  <option value="">M</option>
+                  <option value="">L</option>
+                  <option value="">XL</option>
+                </select>
               </div>
             </div>
             <hr class="featurette-divider">
@@ -483,109 +535,220 @@
 
     </section>
 
-    <!-- Section9 card  -->
+    <!-- Section8 card  -->
     <section>
-      <div class="container-lg mt-5">
-        <div class="row">
-          <div class="col-3">
-            <div class="card" style="width: 18rem;">
-              <img src="./digital box img/420x260.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <p>CATEGORY</p>
-                <p class="card-text">The Catalyzer</p>
-                <p>$16.00</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-3">
-            <div class="card" style="width: 18rem;">
-              <img src="./digital box img/420x260.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <p>CATEGORY</p>
-                <p class="card-text">The Catalyzer</p>
-                <p>$16.00</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-3">
-            <div class="card" style="width: 18rem;">
-              <img src="./digital box img/420x260.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <p>CATEGORY</p>
-                <p class="card-text">The Catalyzer</p>
-                <p>$16.00</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-3">
-            <div class="card" style="width: 18rem;">
-              <img src="./digital box img/420x260.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <p>CATEGORY</p>
-                <p class="card-text">The Catalyzer</p>
-                <p>$16.00</p>
-              </div>
-            </div>
-          </div>
+      <div class="container py-24 mt-5">
 
+        <!-- 上面那排 -->
+        <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4">
+          <div class="col">
+            <div class="card w-100 border-0">
+              <img src="./digital box img/420x260.png" class="card-img-top b-2" alt="...">
+              <div class="pt-4 pb-3">
+                <p class="card-text-top">CATEGORY</p>
+                <p class="card-text">The Catalyzer</p>
+                <p>$16.00</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card w-100 border-0">
+              <img src="./digital box img/420x260.png" class="card-img-top b-2" alt="...">
+              <div class="pt-3 pb-3">
+                <p class="card-text-top">CATEGORY</p>
+                <p class="card-text"> Shooting Stars </p>
+                <p>$21.15</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card w-100 border-0">
+              <img src="./digital box img/420x260.png" class="card-img-top b-2" alt="...">
+              <div class="pt-3 pb-3">
+                <p class="card-text-top">CATEGORY</p>
+                <p class="card-text">Neptune</p>
+                <p>$12.00</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card w-100 border-0">
+              <img src="./digital box img/420x260.png" class="card-img-top b-2" alt="...">
+              <div class="pt-3 pb-3">
+                <p class="card-text-top">CATEGORY</p>
+                <p class="card-text">The 400 Blows</p>
+                <p>$18.40</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 下面那排 -->
+        <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4">
+          <div class="col">
+            <div class="card w-100 border-0">
+              <img src="./digital box img/420x260.png" class="card-img-top b-2" alt="...">
+              <div class="pt-3 pb-3">
+                <p class="card-text-top">CATEGORY</p>
+                <p class="card-text">The Catalyzer</p>
+                <p>$16.00</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card w-100 border-0">
+              <img src="./digital box img/420x260.png" class="card-img-top b-2" alt="...">
+              <div class="pt-3 pb-3">
+                <p class="card-text-top">CATEGORY</p>
+                <p class="card-text">Shooting Stars</p>
+                <p>$21.15</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card w-100 border-0">
+              <img src="./digital box img/420x260.png" class="card-img-top b-2" alt="...">
+              <div class="pt-3 pb-3">
+                <p class="card-text-top">CATEGORY</p>
+                <p class="card-text">Neptune</p>
+                <p>$12.00</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card w-100 border-0">
+              <img src="./digital box img/420x260.png" class="card-img-top b-2" alt="...">
+              <div class="pt-3 pb-3">
+                <p class="card-text-top">CATEGORY</p>
+                <p class="card-text">The 400 Blows</p>
+                <p>$18.40</p>
+              </div>
+            </div>
+          </div>
         </div>
 
 
-        <div class="container-lg mt-5">
-          <div class="row">
-            <div class="col-3">
-              <div class="card" style="width: 18rem;">
-                <img src="./digital box img/420x260.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p>CATEGORY</p>
-                  <p class="card-text">The Catalyzer</p>
-                  <p>$16.00</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-3">
-              <div class="card" style="width: 18rem;">
-                <img src="./digital box img/420x260.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p>CATEGORY</p>
-                  <p class="card-text">The Catalyzer</p>
-                  <p>$16.00</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-3">
-              <div class="card" style="width: 18rem;">
-                <img src="./digital box img/420x260.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p>CATEGORY</p>
-                  <p class="card-text">The Catalyzer</p>
-                  <p>$16.00</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-3">
-              <div class="card" style="width: 18rem;">
-                <img src="./digital box img/420x260.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p>CATEGORY</p>
-                  <p class="card-text">The Catalyzer</p>
-                  <p>$16.00</p>
-                </div>
-              </div>
-            </div>
 
+      </div>
+
+    </section>
+
+    <!-- Section 9 地圖 -->
+    <section>
+      
+      <div class="map">
+        <!-- Google Map -->
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14559.210411062479!2d120.6467411!3d24.1786547!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x73dd146c41c3035a!2z6YCi55Sy5aSn5a24!5e0!3m2!1szh-TW!2stw!4v1647226354904!5m2!1szh-TW!2stw"
+          width="100%" height="900px" style="border:0; filter: grayscale(100%) contrast(1.2) opacity(0.7);"
+          allowfullscreen="" loading="lazy"></iframe>
+
+        <!-- 上面的表單 -->
+
+        <form class="map-form">
+          
+          <div class="form-group ">
+            <p class="line_text">Feedback</p>
+            <p class="w-100" style="filter: opacity(0.7);">Post-ironic portland shabby chic echo park, banjo fashion axe
+            </p>
+            <label for="exampleInputEmail1">Email</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
           </div>
 
-        </div>
+          <!-- Message Box -->
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Message</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="8"></textarea>
+          </div>
 
+          <!-- Button -->
+          <button type="submit" class="w-100 btn btn-primary">Button</button>
+          <p class="mt-1" style="font-size: 12px;">Chicharrones blog helvetica normcore iceland tousled brook viral
+            artisan.</p>
+        </form>
+
+      </div>
 
 
     </section>
-    <section></section>
+
     <section></section>
     <section></section>
   </main>
-  <footer></footer>
+
+  <!-- footer -->
+  <footer>
+    <!-- 上面那塊白的 -->
+    <div class="container">
+      <div class="row p-5">
+
+        <!-- 數位方塊 -->
+        <div class="col-12 col-sm-8 col-md-3">
+          <div class="d-flex align-items-center justify-content-center justify-content-sm-start py-2" >
+            <img src="./digital box img/資產 2.svg" class="pr-2" alt="">
+            <span style="font-size: 20px;">數位方塊</span>
+          </div>
+          <p class="mt-2 text-sm-left text-center">Air plant banjo lyft occupy retro adaptogen indego</p>
+        </div>
+
+        <!-- 隔壁四塊東西 -->
+        <div class="col-12 col-sm-4 col-md-9">
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 text-sm-left text-center">
+            <ul class="col">
+              <p>CATEGORIES</p>
+              <li>First Link</li>
+              <li>Second Link</li>
+              <li>Third Link</li>
+              <li>Fourth Link</li>
+            </ul>
+            <ul class="col">
+              <p>CATEGORIES</p>
+              <li>First Link</li>
+              <li>Second Link</li>
+              <li>Third Link</li>
+              <li>Fourth Link</li>
+            </ul>
+            <ul class="col">
+              <p>CATEGORIES</p>
+              <li>First Link</li>
+              <li>Second Link</li>
+              <li>Third Link</li>
+              <li>Fourth Link</li>
+            </ul>
+            <ul class="col">
+              <p>CATEGORIES</p>
+              <li>First Link</li>
+              <li>Second Link</li>
+              <li>Third Link</li>
+              <li>Fourth Link</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- 最下面那塊 -->
+    <div class="bg-light">
+      <div class="container py-2">
+
+        <div class="row row-cols-1 row-cols-sm-2 d-flex ">
+          <p class="d-flex justify-content-center justify-content-sm-start"> © 2020 Tailblocks — @knyttneve </p>
+
+          <!-- icon 們 -->
+          <div class="d-flex justify-content-center justify-content-sm-end w-50 h-50 ">
+            <img src="./digital box img/svgexport-18.svg" alt="">
+            <img src="./digital box img/svgexport-19.svg" alt="">
+            <img src="./digital box img/svgexport-20.svg" alt="">
+            <img src="./digital box img/linkedin-in-brands.svg" style="width: 20px; margin: 5px;" alt="">
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+  </footer>
 
   <!-- Bootsrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
